@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 <body>
     <h1>
         Code Quiz
     </h1>
+
+    <section id="introScreen">
+        <button id="Start">
+            Start Game 
+        </button>
+    </section>
    
-    <section id="gameScreen">
+    <section id="gameScreen" style="display: none">
         <p>
             Time Left : <span id="timer">60</span>
         </p>
@@ -21,11 +28,9 @@
         <div id="answers">
             Answers 
         </div>
-        <button id="Start">
-            Start Game 
-        </button>
+       
     </section>
-    <section id="gameOver" style="display: block">
+    <section id="gameOver" style="display: none">
         <h3>
             Game Over <br>  Your Final Score is; <span id="finalScore"></span>
         </h3>
@@ -34,7 +39,7 @@
             Save Your Score
         </button>
     </section>
-    <script src="filename.js"></script>
+    <script src="./script.js"></script>
     
 </body>
 </html>
